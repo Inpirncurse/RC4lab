@@ -79,10 +79,10 @@ def main():
     key = lines[0]
     plaintext = lines[1]
 
-    if " " in plaintext:
-        for line in plaintext:
-            lines.append(line)
-            plaintext = plaintext.replace(" ", "")
+    
+    for line in plaintext:
+        lines.append(line)
+            
 
     crypto = encrypt(key, plaintext)
 
